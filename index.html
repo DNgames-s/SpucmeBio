@@ -11,10 +11,10 @@
             transform: translateY(60px);
             background-color: rgb(60, 63, 70);
             width: 350px;
-            height: 550px;
+            height: 510px;
             display: block;
             margin: auto;
-            border-radius: 20px;
+            border-radius: 15px;
         }
 
         .img {
@@ -41,20 +41,26 @@
             color: white;
             background-color: rgb(33, 141, 160);
             border: 0px;
-            border-radius: 10px;
+            border-radius: 9px;
             width: 300px ;
             height: 50px;
             font-size: 17px;
+        }
+        .b1:hover {
+            background-color: rgb(24, 108, 122);
         }
 
         .b2 {
             color: white;
             background-color: rgb(33, 141, 160);
             border: 0px;
-            border-radius: 10px;
+            border-radius: 9px;
             width: 145px ;
             height: 50px;
             font-size: 17px;
+        }
+        .b2:hover {
+            background-color: rgb(24, 108, 122);
         }
 
         .d1 {
@@ -70,12 +76,31 @@
         }
 
         .d4 {
-            transform: translate(24px, 10px);
+            transform: translate(24px, -5px);
         }
 
         .d5 {
-            transform: translate(180px, -40px);
+            transform: translate(180px, -55px);
         }
+
+        #ccc {
+            width: 350px;
+            height: 100px;
+            margin: auto;
+            transform: translateY(50px);
+            border-radius: 15px;
+            background-color: rgb(60, 63, 70);
+            z-index: 1;
+        }
+        
+        
+
+        .font {
+            color: white;
+            font-size: 17px;
+            transform: translate(10px, 20px);
+            font-family: 'Courier New', Courier, monospace;
+            }
 
     </style>
 </head>
@@ -105,6 +130,10 @@
         <button class="b2 d5">TGK</button>
     </form>
 
+    </div>
+
+    <div id="ccc">
+        <p class="font">"Каждый день может быть не очень хорошим, но в каждом дне есть хорошее"</p>
     </div>
 </body>
 </html>
