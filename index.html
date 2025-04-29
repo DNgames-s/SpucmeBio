@@ -19,9 +19,9 @@
 
         .gradient-background {
             height: 100vh;
-            background: linear-gradient(270deg,  #27b491,#b42727, #27b491,#b42727, #27b491);
+            background: linear-gradient(270deg,  #27b491,#ce4343, #27b491);
             background-size: 400% 400%;
-            animation: gradient 25s ease infinite;
+            animation: gradient 13s ease infinite;
             }
 
         @keyframes gradient {
@@ -36,14 +36,21 @@
                 }
             }
 
+            body {
+            font-family: 'Arial', serif;
+        }
+
         #name {
             transform: translateY(60px);
-            background-color: rgb(60, 63, 70);
             width: 350px;
             height: 510px;
             display: block;
             margin: auto;
             border-radius: 15px;
+            background-color: rgba(71, 74, 82, 0.6); 
+            border: 3px solid #ccc;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
 
 
@@ -117,6 +124,7 @@
         .d4 {
             transform: translate(24px, 65px);
             display: block;
+            font-family: 'Family Sans';
         }
 
         .d5 {
@@ -129,11 +137,27 @@
             height: 100px;
             margin: auto;
             display: block;
-            transform: translateY(70px);
+            margin-top: 75px;
             border-radius: 15px;
-            background-color: rgb(60, 63, 70);
+            background-color: rgba(71, 74, 82, 0.6); 
+            border: 3px solid #ccc;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
             z-index: 1;
+            animation: rcc 4s ease infinite;
         }
+
+        @keyframes rcc {
+            0% {
+                transform: translateY(7px);
+            }
+            50% {
+                transform: translateY(-7px);
+            }
+            100% {
+                transform: translateY(7px);
+                }
+            }
         
         
 
@@ -145,10 +169,15 @@
             display: block;
             }
 
+        #frf {
+            transform: translateY(90px);
+        }
+
     </style>
 </head>
 <body>
     <div class="gradient-background">
+        <div id="frf">
     <div id="name">
         <img class="img" src="spucme.jpg">
         <h1 class="imm">𝚂𝚙𝚞𝚌𝚖𝚎🌹</h1>
@@ -178,6 +207,7 @@
 
     <div id="ccc">
         <p class="font">"Каждый день может быть не очень хорошим, но в каждом дне есть хорошее"</p>
+    </div>
     </div>
     </div>
 </body>
