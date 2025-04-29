@@ -2,57 +2,50 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
     <title>𝚂𝚙𝚞𝚌𝚖𝚎🌹</title>
     <style>
-
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            }
+        }
 
-        body, html {
+        html, body {
             height: 100%;
-            }
+            max-width: 100%;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+
+        body {
+            font-family: 'Arial', serif;
+        }
 
         .gradient-background {
             height: 100vh;
-            background: linear-gradient(270deg,  #27b491,#ce4343, #27b491);
+            background: linear-gradient(270deg, #27b491, #ce4343, #27b491);
             background-size: 400% 400%;
             animation: gradient 13s ease infinite;
-            }
+        }
 
         @keyframes gradient {
-            0% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
-                }
-            }
-
-            body {
-            font-family: 'Arial', serif;
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
 
         #name {
             transform: translateY(60px);
             width: 350px;
-            height: 510px;
+            height: 490px;
             display: block;
             margin: auto;
             border-radius: 15px;
             background-color: rgba(71, 74, 82, 0.6); 
             border: 3px solid #ccc;
-            border-radius: 12px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
-
 
         .img {
             border-radius: 100%;
@@ -65,101 +58,64 @@
 
         .imm {
             color: white;
-            transform: translate(90px, -60px);
+            transform: translate(90px, -40px);
             font-size: 40px;
             display: block;
         }
 
         .imm2 {
             color: rgb(153, 153, 153);
-            transform: translate(100px, -60px);
+            transform: translate(100px, -40px);
+            display: block;
+        }
+
+        .b1, .b2 {
+            color: white;
+            background-color: rgb(33, 141, 160);
+            border: 0px;
+            border-radius: 9px;
+            font-size: 17px;
             display: block;
         }
 
         .b1 {
-            color: white;
-            background-color: rgb(33, 141, 160);
-            border: 0px;
-            border-radius: 9px;
-            width: 300px ;
+            width: 300px;
             height: 50px;
-            font-size: 17px;
-            display: block;
-        }
-        .b1:hover {
-            background-color: rgb(24, 108, 122);
-            display: block;
         }
 
         .b2 {
-            color: white;
-            background-color: rgb(33, 141, 160);
-            border: 0px;
-            border-radius: 9px;
-            width: 145px ;
+            width: 145px;
             height: 50px;
-            font-size: 17px;
-            display: block;
         }
-        .b2:hover {
+
+        .b1:hover, .b2:hover {
             background-color: rgb(24, 108, 122);
-            display: block;
         }
 
-        .d1 {
-            transform: translate(24px, 20px);
-            display: block;
-        }
-
-        .d2 {
-            transform: translate(24px, 35px);
-            display: block;
-        }
-
-        .d3 {
-            transform: translate(24px, 50px);
-            display: block;
-        }
-
-        .d4 {
-            transform: translate(24px, 65px);
-            display: block;
-            font-family: 'Family Sans';
-        }
-
-        .d5 {
-            transform: translate(180px, 15px);
-            display: block;
-        }
+        .d1 { transform: translate(24px, -10px); }
+        .d2 { transform: translate(24px, 5px); }
+        .d3 { transform: translate(24px, 20px); }
+        .d4 { transform: translate(24px, 35px); }
+        .d5 { transform: translate(180px, -15px); }
 
         #ccc {
             width: 350px;
             height: 100px;
             margin: auto;
-            display: block;
             margin-top: 75px;
             border-radius: 15px;
             background-color: rgba(71, 74, 82, 0.6); 
             border: 3px solid #ccc;
-            border-radius: 12px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
             z-index: 1;
             animation: rcc 4s ease infinite;
         }
 
         @keyframes rcc {
-            0% {
-                transform: translateY(7px);
-            }
-            50% {
-                transform: translateY(-7px);
-            }
-            100% {
-                transform: translateY(7px);
-                }
-            }
-        
-        
+            0% { transform: translateY(7px); }
+            50% { transform: translateY(-7px); }
+            100% { transform: translateY(7px); }
+        }
 
         .font {
             color: white;
@@ -167,47 +123,38 @@
             transform: translate(10px, 20px);
             font-family: 'Courier New', Courier, monospace;
             display: block;
-            }
-
+        }
     </style>
 </head>
-<body>
+<body style="position: fixed; width: 100vw; height: 100vh;">
     <div class="gradient-background">
         <div id="frf">
-    <div id="name">
-        <img class="img" src="spucme.jpg">
-        <h1 class="imm">𝚂𝚙𝚞𝚌𝚖𝚎🌹</h1>
-        <h3 class="imm2">DNG-Ames Team</h3>
+            <div id="name">
+                <img class="img" src="spucme.jpg">
+                <h1 class="imm">𝚂𝚙𝚞𝚌𝚖𝚎🌹</h1>
+                <h3 class="imm2">DNG-Ames Team</h3>
 
-    <form action="https://t.me/perh_spucme" method="get" target="_self">
-        <button class="b1 d1">TELEGRAM</button>
-    </form>
+                <form action="https://t.me/perh_spucme" method="get" target="_self">
+                    <button class="b1 d1">TELEGRAM</button>
+                </form>
+                <form action="https://t.me/spucmebio" method="get" target="_self">
+                    <button class="b1 d2">BIO</button>
+                </form>
+                <form action="https://t.me/spucme_donateBot" method="get" target="_self">
+                    <button class="b1 d3">DONATE</button>
+                </form>
+                <form action="https://t.me/liosiris" method="get" target="_self">
+                    <button class="b2 d4">DEF</button>
+                </form>
+                <form action="https://t.me/dng_Ames" method="get" target="_self">
+                    <button class="b2 d5">TGK</button>
+                </form>
+            </div>
 
-    <form action="https://t.me/spucmebio" method="get" target="_self">
-        <button class="b1 d2">BIO</button>
-    </form>
-
-    <form action="https://t.me/spucme_donateBot" method="get" target="_self">
-        <button class="b1 d3">DONATE</button>
-    </form>
-
-    <form action="https://t.me/liosiris" method="get" target="_self">
-        <button class="b2 d4">DEF</button>
-    </form>
-
-    <form action="https://t.me/dng_Ames" method="get" target="_self">
-        <button class="b2 d5">TGK</button>
-    </form>
-
-    </div>
-
-    <div id="ccc">
-        <p class="font">"Каждый день может быть не очень хорошим, но в каждом дне есть хорошее"</p>
-    </div>
-    </div>
+            <div id="ccc">
+                <p class="font">Каждый день может быть не очень хорошим, но в каждом дне есть хорошее</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
-        
-
-        
