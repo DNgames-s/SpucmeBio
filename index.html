@@ -7,9 +7,34 @@
     <title>𝚂𝚙𝚞𝚌𝚖𝚎🌹</title>
     <style>
 
-    body {
-        background: white
-    }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            }
+
+        body, html {
+            height: 100%;
+            }
+
+        .gradient-background {
+            height: 100vh;
+            background: linear-gradient(270deg,  #27b491,#b42727, #27b491,#b42727);
+            background-size: 400% 400%;
+            animation: gradient 25s ease infinite;
+            }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+                }
+            }
 
         #name {
             transform: translateY(60px);
@@ -33,13 +58,15 @@
 
         .imm {
             color: white;
-            transform: translate(90px, -80px);
+            transform: translate(90px, -60px);
             font-size: 40px;
+            display: block;
         }
 
         .imm2 {
             color: rgb(153, 153, 153);
-            transform: translate(100px, -90px);
+            transform: translate(100px, -60px);
+            display: block;
         }
 
         .b1 {
@@ -50,9 +77,11 @@
             width: 300px ;
             height: 50px;
             font-size: 17px;
+            display: block;
         }
         .b1:hover {
             background-color: rgb(24, 108, 122);
+            display: block;
         }
 
         .b2 {
@@ -63,36 +92,44 @@
             width: 145px ;
             height: 50px;
             font-size: 17px;
+            display: block;
         }
         .b2:hover {
             background-color: rgb(24, 108, 122);
+            display: block;
         }
 
         .d1 {
-            transform: translate(24px, -50px);
+            transform: translate(24px, 20px);
+            display: block;
         }
 
         .d2 {
-            transform: translate(24px, -35px);
+            transform: translate(24px, 35px);
+            display: block;
         }
 
         .d3 {
-            transform: translate(24px, -20px);
+            transform: translate(24px, 50px);
+            display: block;
         }
 
         .d4 {
-            transform: translate(24px, -5px);
+            transform: translate(24px, 65px);
+            display: block;
         }
 
         .d5 {
-            transform: translate(180px, -55px);
+            transform: translate(180px, 15px);
+            display: block;
         }
 
         #ccc {
             width: 350px;
             height: 100px;
             margin: auto;
-            transform: translateY(50px);
+            display: block;
+            transform: translateY(70px);
             border-radius: 15px;
             background-color: rgb(60, 63, 70);
             z-index: 1;
@@ -105,11 +142,13 @@
             font-size: 17px;
             transform: translate(10px, 20px);
             font-family: 'Courier New', Courier, monospace;
+            display: block;
             }
 
     </style>
 </head>
 <body>
+    <div class="gradient-background">
     <div id="name">
         <img class="img" src="spucme.jpg">
         <h1 class="imm">𝚂𝚙𝚞𝚌𝚖𝚎🌹</h1>
@@ -139,6 +178,7 @@
 
     <div id="ccc">
         <p class="font">"Каждый день может быть не очень хорошим, но в каждом дне есть хорошее"</p>
+    </div>
     </div>
 </body>
 </html>
