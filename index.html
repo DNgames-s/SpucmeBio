@@ -19,7 +19,27 @@
 
     body {
       font-family: 'Georgia', serif;
-      background: linear-gradient(120deg, #1d1d24, #3e3e49, #27272e);
+    }
+
+    .gradient-background {
+      height: 100vh;
+      background: linear-gradient(120deg, #1d1d24, #424250, #2d2d35, #363641, #454555, #26262e);
+      background-size: 400% 400%;
+      animation: gradient 18s ease infinite;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
     }
 
     .gl {
@@ -29,7 +49,7 @@
       display: block;
       margin: auto;
       border-radius: 15px;
-      background-color: rgba(30, 32, 39, 0.452);
+      background-color: rgba(30, 32, 39, 0.363);
       border: 1px solid #c2c2c2;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     }
@@ -101,16 +121,18 @@
 </head>
 
 <body>
-  <div class="gl">
-    <div class="flex_gl">
-      <div class="iml"><img src="./images/spucme.jpg" alt="spucme img"></div>
-      <h1>Spucme🌹 #vl</h1>
-    </div>
-    <div class="buttons">
-      <a href="https://t.me/perh_spucme"><button class="b1">telegram</button></a>
-      <a href="https://t.me/spucmebio"><button class="b1">bio</button></a>
-      <a href="https://t.me/dng_Ames"><button class="b2">channel</button></a>
-      <a href="https://t.me/spucme_donateBot"><button class="b2">donate</button></a>
+  <div class="gradient-background">
+    <div class="gl">
+      <div class="flex_gl">
+        <div class="iml"><img src="./images/spucme.jpg" alt="spucme img"></div>
+        <h1>Spucme🌹 #vl</h1>
+      </div>
+      <div class="buttons">
+        <a href="https://t.me/perh_spucme"><button class="b1">telegram</button></a>
+        <a href="https://t.me/spucmebio"><button class="b1">bio</button></a>
+        <a href="https://t.me/dng_Ames"><button class="b2">channel</button></a>
+        <a href="https://t.me/spucme_donateBot"><button class="b2">donate</button></a>
+      </div>
     </div>
   </div>
 </body>
