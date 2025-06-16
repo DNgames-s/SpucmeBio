@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spucme project</title>
+  <style>
+    html,
+    body {
+      overflow-x: hidden;
+      overflow-y: scroll;
+      touch-action: pan-y;
+      user-select: none;
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      font-family: 'Georgia', serif;
+      background: linear-gradient(120deg, #1d1d24, #3e3e49, #27272e);
+    }
+
+    .gl {
+      transform: translateY(170px);
+      width: 350px;
+      height: 490px;
+      display: block;
+      margin: auto;
+      border-radius: 15px;
+      background-color: rgba(30, 32, 39, 0.3);
+      border: 1px solid #c2c2c2;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .flex_gl {
+      display: flex;
+      justify-content: center;
+      width: 350px;
+      flex-wrap: wrap;
+    }
+
+    .iml img {
+      width: 140px;
+      height: 140px;
+      border-radius: 15px;
+      padding: 8px;
+      margin-top: 40px;
+      border: 1px solid #c2c2c2;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    .iml {
+      display: flex;
+      justify-content: center;
+    }
+
+    .gl h1 {
+      color: white;
+      margin-top: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 330px;
+      height: auto;
+      margin: auto;
+      gap: 10px; 
+      margin-top: 20px;
+    }
+
+    .button {
+      border-radius: 8px;
+      border: 0px;
+      background-color: #e97c00;
+      width: 145px;
+      height: 50px;
+      font-size: 16px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 3px rgba(216, 140, 0, 0.5);
+    }
+
+    .button:hover {
+      scale: 1.03;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="gl">
+    <div class="flex_gl">
+      <div class="iml"><img src="./images/spucme.jpg"></div>
+      <h1>Spucme🌹 #vl</h1>
+    </div>
+    <div class="buttons">
+      <button class="button">telegram</button>
+      <button class="button">channel</button>
+      <button class="button">bio</button>
+      <button class="button">donate</button>
+    </div>
+  </div>
+</body>
+
+</html>
