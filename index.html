@@ -15,17 +15,18 @@
       user-select: none;
       height: 100%;
       margin: 0;
+      max-width: 100%;
     }
 
     body {
-      font-family: 'Georgia', serif;
+      font-family: 'Arial', serif;
     }
 
     .gradient-background {
-      height: 100vh;
-      background: linear-gradient(120deg, #1d1d24, #424250, #2d2d35, #363641, #454555, #26262e);
+      height: 1000%;
+      background: linear-gradient(120deg, #000000, #6b6b7c, #000000, #575763);
       background-size: 400% 400%;
-      animation: gradient 18s ease infinite;
+      animation: gradient 10s ease infinite;
     }
 
     @keyframes gradient {
@@ -44,7 +45,7 @@
 
     .gl {
       transform: translateY(80px);
-      width: 330px;
+      width: 570px;
       height: 530px;
       display: block;
       margin: auto;
@@ -117,6 +118,106 @@
       width: 290px;
       margin-top: 5px;
     }
+
+    .namesost {
+      transform: translateY(40px);
+      width: 830px;
+      height: 70px;
+      display: block;
+      margin: auto;
+      border-radius: 15px;
+      background-color: rgba(30, 32, 39, 0.363);
+      border: 1px solid #c2c2c2;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+
+    hr {
+      margin: auto;
+      width: 170px;
+      height: 4px;
+      background-color: #ff8800;
+      margin-top: 120px;
+      border: 0px;
+      border-radius: 5px;
+    }
+
+    .namesost h1 {
+      color: white;
+      position: relative;
+      bottom: 10px;
+      font-size: 37px;
+    }
+
+    .sosts {
+      display: flex;
+      justify-content: center;
+      height: auto;
+      width: 60%;
+      flex-wrap: wrap;
+      margin: auto;
+      gap: 30px;
+    }
+
+    .sosts div {
+      transform: translateY(100px);
+      width: 330px;
+      height: 270px;
+      display: block;
+      margin: auto;
+      border-radius: 15px;
+      background-color: rgba(30, 32, 39, 0.363);
+      border: 1px solid #c2c2c2;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      transition: all 0.3s;
+    }
+
+    .sosts div:hover {
+      scale: 1.04;
+      box-shadow: 0 4px 5px rgba(216, 140, 0, 0.5);
+    }
+
+    .d1 img {
+      width: 100px;
+      height: auto;
+      padding: 3px;
+      margin-top: 15px;
+      border: 1px solid #c2c2c2;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      margin-left: -200px;
+    }
+
+    .d1 h1 {
+      color: white;
+      text-align: right;
+      padding: 20px;
+      position: relative;
+      top: -120px;
+    }
+
+    .d1 p {
+      color: rgb(231, 231, 231);
+      position: relative;
+      top: -90px;
+      width: 285px;
+      margin: auto;
+    }
+
+    @media (max-width: 800px) {
+      .gl {
+        width: 330px;
+      }
+
+      .namesost {
+        width: 330px;
+      }
+
+      hr {
+        width: 70px;
+      }
+    }
   </style>
 </head>
 
@@ -133,6 +234,31 @@
         <a href="https://t.me/dng_Ames"><button class="b2">channel</button></a>
         <a href="https://t.me/spucme_donateBot"><button class="b2">donate</button></a>
       </div>
+    </div>
+    <hr>
+    <div class="namesost">
+      <h1>Я состою:</h1>
+    </div>
+    <div class="sosts">
+
+      <div class="d1">
+        <img src="./images/dngames.jpg" alt="DNG-Ames">
+        <h1>dngames</h1>
+        <p>команда талантливых разработчиков, которые создают инновационные решения для ваших проектов.</p>
+      </div>
+
+      <div class="d1">
+        <img src="./images/valet.jpg" alt="Valet Legion">
+        <h1>Valet Leg</h1>
+        <p>Команда по кибер безопасности в интернете, мы всегда поможем, решим, и выслушаем</p>
+      </div>
+
+      <div class="d1">
+        <img src="./images/stikovna.jpg" alt="стиковня">
+        <h1>стиковня </h1>
+        <p>сообщество по работе с микроконтролерами стику и гайдами по этим темам</p>
+      </div>
+
     </div>
   </div>
 </body>
