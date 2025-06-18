@@ -2,277 +2,454 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="./favicon.ico" type="image/x-icon">
-  <title>Spucme project</title>
-  <style>
-    html,
-    body {
-      overflow-x: hidden;
-      overflow-y: scroll;
-      touch-action: pan-y;
-      user-select: none;
-      height: 100%;
-      margin: 0;
-      max-width: 100%;
-    }
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="./favicon.ico" type="image/x-icon">
+	<title>Spucme project</title>
+	<style>
+		html,
+		body {
+			overflow-x: hidden;
+			touch-action: pan-y;
+			user-select: none;
+			height: 100%;
+			margin: 0;
+			max-width: 100%;
+		}
 
-    body {
-      font-family: 'Arial', serif;
-    }
+		body {
+			font-family: 'Arial', serif;
+			background: linear-gradient(120deg, #363636, #6b6b7c, #2b2b2b, #575763);
+			background-size: 400% 400%;
+		}
 
-    .gradient-background {
-      height: 200vh;
-      background: linear-gradient(120deg, #363636, #6b6b7c, #2b2b2b, #575763);
-      background-size: 400% 400%;
-      animation: gradient 10s ease infinite;
-    }
+		.gl {
+			transform: translateY(80px);
+			width: 570px;
+			height: 530px;
+			display: block;
+			margin: auto;
+			border-radius: 15px;
+			background-color: rgba(30, 32, 39, 0.363);
+			border: 1px solid #c2c2c2;
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+		}
 
-    @keyframes gradient {
-      0% {
-        background-position: 0% 50%;
-      }
+		.flex_gl {
+			display: flex;
+			justify-content: center;
+			width: 330px;
+			flex-wrap: wrap;
+			margin: auto;
+		}
 
-      50% {
-        background-position: 100% 50%;
-      }
+		.iml img {
+			width: 140px;
+			height: 140px;
+			border-radius: 15px;
+			padding: 8px;
+			margin-top: 40px;
+			border: 1px solid #c2c2c2;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+		}
 
-      100% {
-        background-position: 0% 50%;
-      }
-    }
+		.iml {
+			display: flex;
+			justify-content: center;
+		}
 
-    .gl {
-      transform: translateY(80px);
-      width: 570px;
-      height: 530px;
-      display: block;
-      margin: auto;
-      border-radius: 15px;
-      background-color: rgba(30, 32, 39, 0.363);
-      border: 1px solid #c2c2c2;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    }
+		.gl h1 {
+			color: white;
+			margin-top: 30px;
+		}
 
-    .flex_gl {
-      display: flex;
-      justify-content: center;
-      width: 330px;
-      flex-wrap: wrap;
-      margin: auto;
-    }
+		.buttons {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			width: 500px;
+			height: auto;
+			margin: auto;
+			gap: 10px;
+			margin-top: 20px;
+		}
 
-    .iml img {
-      width: 140px;
-      height: 140px;
-      border-radius: 15px;
-      padding: 8px;
-      margin-top: 40px;
-      border: 1px solid #c2c2c2;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    }
+		.buttons button {
+			border-radius: 8px;
+			border: 0px;
+			background-color: #ff8800;
 
-    .iml {
-      display: flex;
-      justify-content: center;
-    }
+			height: 50px;
+			font-size: 16px;
+			transition: all 0.3s ease;
+			box-shadow: 0 4px 3px rgba(216, 140, 0, 0.5);
+		}
 
-    .gl h1 {
-      color: white;
-      margin-top: 30px;
-    }
+		.buttons button:hover {
+			scale: 1.03;
+		}
 
-    .buttons {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      width: 500px;
-      height: auto;
-      margin: auto;
-      gap: 10px;
-      margin-top: 20px;
-    }
+		.b2 {
+			width: 190px;
+			margin-top: 5px;
+		}
 
-    .buttons button {
-      border-radius: 8px;
-      border: 0px;
-      background-color: #ff8800;
+		.b1 {
+			width: 390px;
+			margin-top: 5px;
+		}
 
-      height: 50px;
-      font-size: 16px;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 3px rgba(216, 140, 0, 0.5);
-    }
+		.namesost {
+			transform: translateY(40px);
+			width: 750px;
+			height: 70px;
+			display: block;
+			margin: auto;
+			border-radius: 15px;
+			background-color: rgba(30, 32, 39, 0.363);
+			border: 1px solid #c2c2c2;
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+			text-align: center;
+		}
 
-    .buttons button:hover {
-      scale: 1.03;
-    }
+		hr {
+			margin: auto;
+			width: 170px;
+			height: 4px;
+			background-color: #ff8800;
+			margin-top: 120px;
+			border: 0px;
+			border-radius: 5px;
+		}
 
-    .b2 {
-      width: 190px;
-      margin-top: 5px;
-    }
+		.namesost h1 {
+			color: white;
+			position: relative;
+			bottom: 10px;
+			font-size: 37px;
+		}
 
-    .b1 {
-      width: 390px;
-      margin-top: 5px;
-    }
+		.sosts {
+			display: flex;
+			justify-content: center;
+			height: auto;
+			width: 60%;
+			flex-wrap: wrap;
+			margin: auto;
+			gap: 30px;
+		}
 
-    .namesost {
-      transform: translateY(40px);
-      width: 830px;
-      height: 70px;
-      display: block;
-      margin: auto;
-      border-radius: 15px;
-      background-color: rgba(30, 32, 39, 0.363);
-      border: 1px solid #c2c2c2;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-      text-align: center;
-    }
+		.sosts div {
+			transform: translateY(100px);
+			width: 330px;
+			height: 270px;
+			display: block;
+			margin: auto;
+			border-radius: 15px;
+			background-color: rgba(30, 32, 39, 0.363);
+			border: 1px solid #c2c2c2;
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+			text-align: center;
+			transition: all 0.3s;
+		}
 
-    hr {
-      margin: auto;
-      width: 170px;
-      height: 4px;
-      background-color: #ff8800;
-      margin-top: 120px;
-      border: 0px;
-      border-radius: 5px;
-    }
+		.sosts div:hover {
+			scale: 1.04;
+			box-shadow: 0 4px 5px rgba(216, 140, 0, 0.5);
+		}
 
-    .namesost h1 {
-      color: white;
-      position: relative;
-      bottom: 10px;
-      font-size: 37px;
-    }
+		.d1 img {
+			width: 100px;
+			height: auto;
+			padding: 3px;
+			margin-top: 15px;
+			border: 1px solid #c2c2c2;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+			border-radius: 10px;
+			margin-left: -200px;
+		}
 
-    .sosts {
-      display: flex;
-      justify-content: center;
-      height: auto;
-      width: 60%;
-      flex-wrap: wrap;
-      margin: auto;
-      gap: 30px;
-    }
+		.d1 h1 {
+			color: white;
+			text-align: right;
+			padding: 20px;
+			position: relative;
+			top: -120px;
+		}
 
-    .sosts div {
-      transform: translateY(100px);
-      width: 330px;
-      height: 270px;
-      display: block;
-      margin: auto;
-      border-radius: 15px;
-      background-color: rgba(30, 32, 39, 0.363);
-      border: 1px solid #c2c2c2;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-      text-align: center;
-      transition: all 0.3s;
-    }
+		.d1 p {
+			color: rgb(231, 231, 231);
+			position: relative;
+			top: -90px;
+			width: 285px;
+			margin: auto;
+		}
 
-    .sosts div:hover {
-      scale: 1.04;
-      box-shadow: 0 4px 5px rgba(216, 140, 0, 0.5);
-    }
+		.hr1 {
+			transform: translateY(30px);
+		}
 
-    .d1 img {
-      width: 100px;
-      height: auto;
-      padding: 3px;
-      margin-top: 15px;
-      border: 1px solid #c2c2c2;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-      border-radius: 10px;
-      margin-left: -200px;
-    }
+		.knt_name {
+			transform: translateY(70px);
+			width: 750px;
+			height: 70px;
+			display: block;
+			margin: auto;
+			border-radius: 15px;
+			background-color: rgba(30, 32, 39, 0.363);
+			border: 1px solid #c2c2c2;
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+			text-align: center;
+		}
 
-    .d1 h1 {
-      color: white;
-      text-align: right;
-      padding: 20px;
-      position: relative;
-      top: -120px;
-    }
+		.knt_name h1 {
+			color: white;
+			position: relative;
+			bottom: 10px;
+			font-size: 37px;
+		}
 
-    .d1 p {
-      color: rgb(231, 231, 231);
-      position: relative;
-      top: -90px;
-      width: 285px;
-      margin: auto;
-    }
+		.soon {
+			transform: translateY(200px);
+			width: 750px;
+			height: 70px;
+			display: block;
+			margin: auto;
+			border-radius: 15px;
+			background-color: rgba(30, 32, 39, 0.363);
+			border: 1px solid #c2c2c2;
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+			text-align: center;
+		}
 
-    @media (max-width: 800px) {
-      .gl {
-        width: 330px;
-      }
+		.soon h1 {
+			color: white;
+			position: relative;
+			bottom: 10px;
+			font-size: 37px;
+		}
 
-      .namesost {
-        width: 330px;
-      }
+		.knt {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin: auto;
+			width: 60%;
+			height: auto;
+			gap: 20px;
+		}
 
-      hr {
-        width: 70px;
-      }
+		.knt div {
+			transform: translateY(120px);
+			width: 170px;
+			height: 220px;
+			display: block;
+			border-radius: 15px;
+			background-color: rgba(30, 32, 39, 0.363);
+			border: 1px solid #c2c2c2;
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+			text-align: center;
+		}
 
-      .b1 {
-        width: 290px;
-      }
+		.knt img {
+			width: 100px;
+			height: auto;
+			padding: 3px;
+			margin-top: 15px;
+			border: 1px solid #c2c2c2;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+			border-radius: 10px;
+		}
 
-      .b2 { 
-        width: 140px;
-      }
+		.knt h3 {
+			color: white;
+			position: relative;
+			top: -5px;
+		}
 
-      .buttons {
-        width: 330px;
-      }
-    }
-  </style>
+		.knt a {
+			color: white;
+			background-color: #ff8800;
+			padding: 10px;
+			padding-left: 40px;
+			padding-right: 40px;
+			border-radius: 10px;
+			position: relative;
+			top: -5px;
+			font-size: 17px;
+			transition: all 0.3s;
+			text-decoration: none;
+		}
+
+		.knt a:hover {
+			background-color: #cf6f00;
+		}
+
+		footer {
+			margin: 50px;
+			height: 120px;
+		}
+
+
+		@media (max-width: 800px) {
+			.gl {
+				width: 330px;
+			}
+
+			.namesost {
+				width: 330px;
+			}
+
+			.knt_name {
+				width: 330px;
+			}
+
+			.soon {
+				width: 330px;
+			}
+
+			hr {
+				width: 70px;
+			}
+
+			.b1 {
+				width: 290px;
+			}
+
+			.b2 {
+				width: 140px;
+			}
+
+			.buttons {
+				width: 330px;
+			}
+
+			.knt {
+				width: 101%;
+			}
+		}
+	</style>
 </head>
 
 <body>
-  <div class="gradient-background">
-    <div class="gl">
-      <div class="flex_gl">
-        <div class="iml"><img src="./images/spucme.jpg" alt="spucme img"></div>
-        <h1>Spucme🌹 #vl</h1>
-      </div>
-      <div class="buttons">
-        <a href="https://t.me/perh_spucme"><button class="b1">telegram</button></a>
-        <a href="https://t.me/spucmebio"><button class="b1">bio</button></a>
-        <a href="https://t.me/dng_Ames"><button class="b2">channel</button></a>
-        <a href="https://t.me/spucme_donateBot"><button class="b2">donate</button></a>
-      </div>
-    </div>
-    <hr>
-    <div class="namesost">
-      <h1>Я состою:</h1>
-    </div>
-    <div class="sosts">
 
-      <div class="d1">
-        <img src="./images/dngames.jpg" alt="DNG-Ames">
-        <h1>dngames</h1>
-        <p>команда талантливых разработчиков, которые создают инновационные решения для ваших проектов.</p>
-      </div>
+	<div class="gl">
+		<div class="flex_gl">
+			<div class="iml"><img src="./images/spucme2.jpg" alt="spucme img"></div>
+			<h1>Spucme🌹 #vl</h1>
+		</div>
+		<div class="buttons">
+			<a href="https://t.me/perh_spucme"><button class="b1">telegram</button></a>
+			<a href="https://t.me/spucmebio"><button class="b1">bio</button></a>
+			<a href="https://t.me/dng_Ames"><button class="b2">channel</button></a>
+			<a href="https://t.me/spucme_donateBot"><button class="b2">donate</button></a>
+		</div>
+	</div>
+	<hr>
+	<div class="namesost">
+		<h1>Я состою:</h1>
+	</div>
+	<div class="sosts">
+		<div class="d1">
+			<img src="./images/dngames.jpg" alt="DNG-Ames">
+			<h1>dngames</h1>
+			<p>команда талантливых разработчиков, которые создают инновационные решения для ваших проектов.</p>
+		</div>
+		<div class="d1">
+			<img src="./images/valet.jpg" alt="Valet Legion">
+			<h1>Valet Leg</h1>
+			<p>Команда по кибер безопасности в интернете, мы всегда поможем, решим, и выслушаем</p>
+		</div>
+		<div class="d1">
+			<img src="./images/stikovna.jpg" alt="стиковня">
+			<h1>стиковня </h1>
+			<p>сообщество по работе с микроконтролерами и стику, а также с гайдами по этим темам</p>
+		</div>
+	</div>
+	<hr class="hr1">
+	<div class="knt_name">
+		<h1>мои кенты:</h1>
+	</div>
+	<div class="knt">
 
-      <div class="d1">
-        <img src="./images/valet.jpg" alt="Valet Legion">
-        <h1>Valet Leg</h1>
-        <p>Команда по кибер безопасности в интернете, мы всегда поможем, решим, и выслушаем</p>
-      </div>
+		<div>
+			<img src="./images/soyfer.jpg">
+			<h3>Soyfer4k</h3>
+			<a href="https://t.me/soyfer4k">перейти</a>
+		</div>
 
-      <div class="d1">
-        <img src="./images/stikovna.jpg" alt="стиковня">
-        <h1>стиковня </h1>
-        <p>сообщество по работе с микроконтролерами и стику, а также с гайдами по этим темам</p>
-      </div>
+		<div>
+			<img src="./images/simonov.jpg">
+			<h3>симонов</h3>
+			<a href="https://t.me/sim0n0v">перейти</a>
+		</div>
 
-    </div>
-  </div>
+		<div>
+			<img src="./images/neymo.jpg">
+			<h3>neymo</h3>
+			<a href="https://t.me/meowneymo">перейти</a>
+		</div>
+
+		<div>
+			<img src="./images/vlll.jpg">
+			<h3>("#VL ?")</h3>
+			<a href="https://t.me/x8494">перейти</a>
+		</div>
+
+		<div>
+			<img src="./images/glumazr.jpg">
+			<h3>GULUMAZRIK</h3>
+			<a href="https://t.me/@eyzov62">перейти</a>
+		</div>
+
+		<div>
+			<img src="./images/ninj.jpg">
+			<h3>NINJA</h3>
+			<a href="https://t.me/NinjaBV">перейти</a>
+		</div>
+
+		<div>
+			<img src="./images/vodi.jpg">
+			<h3>VODICHKA</h3>
+			<a href="https://t.me/oecwq">перейти</a>
+		</div>
+
+		<div>
+			<img src="./images/sava.jpg">
+			<h3>null</h3>
+			<a href="https://t.me/Sava_kool87">перейти</a>
+		</div>
+
+		<div>
+			<img src="./images/osiris.jpg">
+			<h3>Osiris</h3>
+			<a href="https://t.me/liosiris">перейти</a>
+		</div>
+
+		<div>
+			<img src="./images/l1bs.jpg">
+			<h3>L1bs</h3>
+			<a href="https://t.me/DurovKingTG">перейти</a>
+		</div>
+
+		<div>
+			<img src="./images/lecor.jpg">
+			<h3>nixxmare</h3>
+			<a>перейти</a>
+		</div>
+
+		<div>
+			<img src="./images/ivan.jpg">
+			<h3>Иван</h3>
+			<a href="https://t.me/polioan">перейти</a>
+		</div>
+
+	</div>
+
+	<div class="soon">
+		<h1>скоро будет...</h1>
+	</div>
+<footer></footer>
 </body>
 
 </html>
