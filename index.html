@@ -15,12 +15,28 @@
 			height: 100%;
 			margin: 0;
 			max-width: 100%;
+			scroll-behavior: smooth;
 		}
 
 		body {
 			font-family: 'Arial', serif;
 			background: linear-gradient(120deg, #363636, #6b6b7c, #2b2b2b, #575763);
-			background-size: 100% 100%;
+			background-size: 400% 400%;
+			animation: gradient 12s ease infinite;
+		}
+
+		@keyframes gradient {
+			0% {
+				background-position: 0% 50%;
+			}
+
+			50% {
+				background-position: 100% 50%;
+			}
+
+			100% {
+				background-position: 0% 50%;
+			}
 		}
 
 		html,
@@ -385,181 +401,182 @@
 </head>
 
 <body>
-
-	<div class="gl">
-		<div class="flex_gl">
-			<div class="iml"><img src="./images/spucme2.jpg" alt="spucme img"></div>
-			<h1>Spucme🌹 #vl</h1>
-		</div>
-		<nav class="buttons">
-			<a href="https://t.me/perh_spucme"><button class="b1">telegram</button></a>
-			<a href="https://t.me/spucmebio"><button class="b1">bio</button></a>
-			<a href="https://t.me/dng_Ames"><button class="b2">channel</button></a>
-			<a href="https://t.me/spucme_donateBot"><button class="b2">donate</button></a>
-		</nav>
-	</div>
-	<div class="navbar">
-		<a href="#sost">я состою</a> <a href="#kents">кенты</a> <a href="#shop">магазин</a>
-	</div>
-	<hr>
-	<div class="namesost">
-		<h1>Я состою:</h1>
-	</div>
-	<section id="sost" class="sosts">
-		<div class="d1">
-			<img src="./images/dngames.jpg" alt="DNG-Ames">
-			<h1>dngames</h1>
-			<p>команда талантливых разработчиков, которые создают инновационные решения для ваших проектов.</p>
-		</div>
-		<div class="d1">
-			<img src="./images/valet.jpg" alt="Valet Legion">
-			<h1>Valet Leg</h1>
-			<p>Команда по кибер безопасности в интернете, мы всегда поможем, решим, и выслушаем</p>
-		</div>
-		<div class="d1">
-			<img src="./images/stikovna.jpg" alt="стиковня">
-			<h1>стиковня </h1>
-			<p>сообщество по работе с микроконтролерами и стику, а также с гайдами по этим темам</p>
-		</div>
-	</section>
-	<hr class="hr1">
-	<div class="knt_name">
-		<h1>мои кенты:</h1>
-	</div>
-	<section id="kents" class="knt">
-
-		<div>
-			<img src="./images/osiris.jpg">
-			<h3>Osiris</h3>
-			<a href="https://t.me/liosiris">перейти</a>
-		</div>
-
-		<div>
-			<img src="./images/soyfer.jpg">
-			<h3>Soyfer4k</h3>
-			<a href="https://t.me/soyfer4k">перейти</a>
-		</div>
-
-		<div>
-			<img src="./images/simonov.jpg">
-			<h3>симонов</h3>
-			<a href="https://t.me/sim0n0v">перейти</a>
-		</div>
-
-		<div>
-			<img src="./images/neymo.jpg">
-			<h3>neymo</h3>
-			<a href="https://t.me/meowneymo">перейти</a>
-		</div>
-
-		<div>
-			<img src="./images/vlll.jpg">
-			<h3>("#VL ?")</h3>
-			<a href="https://t.me/x8494">перейти</a>
-		</div>
-
-		<div>
-			<img src="./images/glumazr.jpg">
-			<h3>GULUMAZRIK</h3>
-			<a href="https://t.me/@eyzov62">перейти</a>
-		</div>
-
-		<div>
-			<img src="./images/ninj.jpg">
-			<h3>NINJA</h3>
-			<a href="https://t.me/NinjaBV">перейти</a>
-		</div>
-
-		<div>
-			<img src="./images/vodi.jpg">
-			<h3>VODICHKA</h3>
-			<a href="https://t.me/oecwq">перейти</a>
-		</div>
-
-		<div>
-			<img src="./images/sava.jpg">
-			<h3>null</h3>
-			<a href="https://t.me/Sava_kool87">перейти</a>
-		</div>
-
-		<div>
-			<img src="./images/l1bs.jpg">
-			<h3>L1bs</h3>
-			<a href="https://t.me/DurovKingTG">перейти</a>
-		</div>
-
-		<div>
-			<img src="./images/lecor.jpg">
-			<h3>nixxmare</h3>
-			<a>перейти</a>
-		</div>
-
-		<div>
-			<img src="./images/ivan.jpg">
-			<h3>Иван</h3>
-			<a href="https://t.me/polioan">перейти</a>
-		</div>
-
-	</section>
-	<hr class="hr2">
-	<div class="shop_n">
-		<h1>магазин</h1>
-	</div>
-
-	<section id="shop" class="shop">
-
-		<div class="shopdiv">
-			<img src="./images/rekkl.png">
-			<h3>ваше обЪявление на этом сайте</h3>
-			<div class="en"><a href="https://t.me/spucme?text=хочу%20приобрести%20товар%20'личный%20уголок'">приобрести (0.8
-					$)</a></div>
-		</div>
-
-		<div class="shopdiv">
-			<img src="./images/site.jpg">
-			<h3>сайт био на ваш вкус</h3>
-			<div class="en"><a href="https://t.me/spucme?text=хочу%20приобрести%20товар%20'сайт%20био'">приобрести (4.0 $)</a>
+	<div class="gradient-background">
+		<div class="gl">
+			<div class="flex_gl">
+				<div class="iml"><img src="./images/spucme2.jpg" alt="spucme img"></div>
+				<h1>Spucme🌹 #vl</h1>
 			</div>
+			<nav class="buttons">
+				<a href="https://t.me/perh_spucme"><button class="b1">telegram</button></a>
+				<a href="https://t.me/spucmebio"><button class="b1">bio</button></a>
+				<a href="https://t.me/dng_Ames"><button class="b2">channel</button></a>
+				<a href="https://t.me/spucme_donateBot"><button class="b2">donate</button></a>
+			</nav>
+		</div>
+		<div class="navbar">
+			<a href="#sost">я состою</a> <a href="#kents">кенты</a> <a href="#shop">магазин</a>
+		</div>
+		<hr>
+		<div class="namesost">
+			<h1>Я состою:</h1>
+		</div>
+		<section id="sost" class="sosts">
+			<div class="d1">
+				<img src="./images/dngames.jpg" alt="DNG-Ames">
+				<h1>dngames</h1>
+				<p>команда талантливых разработчиков, которые создают инновационные решения для ваших проектов.</p>
+			</div>
+			<div class="d1">
+				<img src="./images/valet.jpg" alt="Valet Legion">
+				<h1>Valet Leg</h1>
+				<p>Команда по кибер безопасности в интернете, мы всегда поможем, решим, и выслушаем</p>
+			</div>
+			<div class="d1">
+				<img src="./images/stikovna.jpg" alt="стиковня">
+				<h1>стиковня </h1>
+				<p>сообщество по работе с микроконтролерами и стику, а также с гайдами по этим темам</p>
+			</div>
+		</section>
+		<hr class="hr1">
+		<div class="knt_name">
+			<h1>мои кенты:</h1>
+		</div>
+		<section id="kents" class="knt">
+
+			<div>
+				<img src="./images/osiris.jpg">
+				<h3>Osiris</h3>
+				<a href="https://t.me/liosiris">перейти</a>
+			</div>
+
+			<div>
+				<img src="./images/soyfer.jpg">
+				<h3>Soyfer4k</h3>
+				<a href="https://t.me/soyfer4k">перейти</a>
+			</div>
+
+			<div>
+				<img src="./images/simonov.jpg">
+				<h3>симонов</h3>
+				<a href="https://t.me/sim0n0v">перейти</a>
+			</div>
+
+			<div>
+				<img src="./images/neymo.jpg">
+				<h3>neymo</h3>
+				<a href="https://t.me/meowneymo">перейти</a>
+			</div>
+
+			<div>
+				<img src="./images/vlll.jpg">
+				<h3>("#VL ?")</h3>
+				<a href="https://t.me/x8494">перейти</a>
+			</div>
+
+			<div>
+				<img src="./images/glumazr.jpg">
+				<h3>GULUMAZRIK</h3>
+				<a href="https://t.me/@eyzov62">перейти</a>
+			</div>
+
+			<div>
+				<img src="./images/ninj.jpg">
+				<h3>NINJA</h3>
+				<a href="https://t.me/NinjaBV">перейти</a>
+			</div>
+
+			<div>
+				<img src="./images/vodi.jpg">
+				<h3>VODICHKA</h3>
+				<a href="https://t.me/oecwq">перейти</a>
+			</div>
+
+			<div>
+				<img src="./images/sava.jpg">
+				<h3>null</h3>
+				<a href="https://t.me/Sava_kool87">перейти</a>
+			</div>
+
+			<div>
+				<img src="./images/l1bs.jpg">
+				<h3>L1bs</h3>
+				<a href="https://t.me/DurovKingTG">перейти</a>
+			</div>
+
+			<div>
+				<img src="./images/lecor.jpg">
+				<h3>nixxmare</h3>
+				<a>перейти</a>
+			</div>
+
+			<div>
+				<img src="./images/ivan.jpg">
+				<h3>Иван</h3>
+				<a href="https://t.me/polioan">перейти</a>
+			</div>
+
+		</section>
+		<hr class="hr2">
+		<div class="shop_n">
+			<h1>магазин</h1>
 		</div>
 
-		<div class="shopdiv">
-			<img src="./images/simonov.jpg">
-			<h3>приват симонова (софты)</h3>
-			<div class="en"><a href="https://t.me/sim0n0v">приобрести (6.0 $)</a></div>
-		</div>
+		<section id="shop" class="shop">
 
-		<div class="shopdiv">
-			<img src="./images/nft1.jpg">
-			<h3>NFT "Star Notepad"</h3>
-			<div class="nn"><a>нет в наличии</a></div>
-		</div>
+			<div class="shopdiv">
+				<img src="./images/rekkl.png">
+				<h3>ваше обЪявление на этом сайте</h3>
+				<div class="en"><a href="https://t.me/spucme?text=хочу%20приобрести%20товар%20'личный%20уголок'">приобрести (0.8
+						$)</a></div>
+			</div>
 
-		<div class="shopdiv">
-			<img src="./images/nft2.jpg">
-			<h3>NFT "jack-in-the-Box"</h3>
-			<div class="nn"><a>нет в наличии</a></div>
-		</div>
+			<div class="shopdiv">
+				<img src="./images/site.jpg">
+				<h3>сайт био на ваш вкус</h3>
+				<div class="en"><a href="https://t.me/spucme?text=хочу%20приобрести%20товар%20'сайт%20био'">приобрести (4.0
+						$)</a>
+				</div>
+			</div>
 
-		<div class="shopdiv">
-			<img src="./images/nft3.jpg">
-			<h3>NFT "Santa Hat"</h3>
-			<div class="nn"><a>нет в наличии</a></div>
-		</div>
+			<div class="shopdiv">
+				<img src="./images/simonov.jpg">
+				<h3>приват симонова (софты)</h3>
+				<div class="en"><a href="https://t.me/sim0n0v">приобрести (6.0 $)</a></div>
+			</div>
 
-		<div class="shopdiv">
-			<img src="./images/nft4.jpg">
-			<h3>NFT "Lol Pop"</h3>
-			<div class="nn"><a>нет в наличии</a></div>
-		</div>
+			<div class="shopdiv">
+				<img src="./images/nft1.jpg">
+				<h3>NFT "Star Notepad"</h3>
+				<div class="nn"><a>нет в наличии</a></div>
+			</div>
 
-		<div class="shopdiv">
-			<img src="./images/nft5.jpg">
-			<h3>NFT "Desk Calendar"</h3>
-			<div class="nn"><a>нет в наличии</a></div>
-		</div>
+			<div class="shopdiv">
+				<img src="./images/nft2.jpg">
+				<h3>NFT "jack-in-the-Box"</h3>
+				<div class="nn"><a>нет в наличии</a></div>
+			</div>
 
-	</section>
+			<div class="shopdiv">
+				<img src="./images/nft3.jpg">
+				<h3>NFT "Santa Hat"</h3>
+				<div class="nn"><a>нет в наличии</a></div>
+			</div>
 
+			<div class="shopdiv">
+				<img src="./images/nft4.jpg">
+				<h3>NFT "Lol Pop"</h3>
+				<div class="nn"><a>нет в наличии</a></div>
+			</div>
+
+			<div class="shopdiv">
+				<img src="./images/nft5.jpg">
+				<h3>NFT "Desk Calendar"</h3>
+				<div class="nn"><a>нет в наличии</a></div>
+			</div>
+
+		</section>
+	</div>
 	<footer></footer>
 </body>
 <style>
@@ -610,7 +627,7 @@
 		font-size: 17px;
 		transition: all 0.3s;
 		text-decoration: none;
-		width: 330px;
+		width: 320px;
 		height: 40px;
 		display: flex;
 		justify-content: center;
@@ -627,7 +644,7 @@
 		font-size: 17px;
 		transition: all 0.3s;
 		text-decoration: none;
-		width: 330px;
+		width: 320px;
 		height: 40px;
 		display: flex;
 		justify-content: center;
