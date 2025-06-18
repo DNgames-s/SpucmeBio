@@ -30,6 +30,7 @@
 
 		:root {
 			--gl-size: 570px;
+			--name-size: 750px;
 		}
 
 		.gl {
@@ -110,7 +111,7 @@
 
 		.namesost {
 			transform: translateY(40px);
-			width: 750px;
+			width: var(--name-size);
 			height: 70px;
 			display: block;
 			margin: auto;
@@ -200,7 +201,7 @@
 
 		.knt_name {
 			transform: translateY(70px);
-			width: 750px;
+			width: var(--name-size);
 			height: 70px;
 			display: block;
 			margin: auto;
@@ -220,7 +221,7 @@
 
 		.shop_n {
 			transform: translateY(100px);
-			width: 750px;
+			width: var(--name-size);
 			height: 70px;
 			display: block;
 			margin: auto;
@@ -336,6 +337,7 @@
 		@media (max-width: 800px) {
 			:root {
 				--gl-size: 330px;
+				--name-size: 330px;
 			}
 
 			.namesost {
