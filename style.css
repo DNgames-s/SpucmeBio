@@ -40,13 +40,18 @@ html,
   --name-size: 750px;
 }
 
+.all_blocks {
+  position: relative;
+  top: -80px;
+}
+
 .gl {
   transform: translateY(80px);
   width: var(--gl-size);
   height: 530px;
   display: block;
   margin: auto;
-  border-radius: 15px;
+  border-radius: 25px;
   background-color: rgba(30, 32, 39, 0.363);
   border: 1px solid #c2c2c2;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -63,7 +68,7 @@ html,
 .iml img {
   width: 140px;
   height: 140px;
-  border-radius: 15px;
+  border-radius: 35px;
   padding: 8px;
   margin-top: 40px;
   border: 1px solid #c2c2c2;
@@ -321,7 +326,7 @@ footer {
   height: auto;
   display: block;
   margin: auto;
-  border-radius: 15px;
+  border-radius: 25px;
   background-color: rgba(30, 32, 39, 0.363);
   border: 1px solid #c2c2c2;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -351,9 +356,10 @@ footer {
 		position: relative;
     z-index: 100;
     margin: auto;
-    transform: translate(80px, 160px);
+    transform: translate(70px, 160px);
     filter: drop-shadow(0 0 15px #8e2de2);
 	}
+
 	.shop {
 		display: flex;
 		flex-wrap: wrap;
