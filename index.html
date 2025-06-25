@@ -355,11 +355,22 @@
 			color: white;
 		}
 	</style>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+	<script>
+		var animation = bodymovin.loadAnimation({
+			container: document.getElementById('lottie-animation'),
+			renderer: 'svg',
+			loop: true,
+			autoplay: true,
+			path: 'status1.json'
+		});
+	</script>
 </head>
 
 <body>
 	<div class="gradient-background">
 		<div class="gl">
+			<div id="lottie-animation" style="width: 500px; height: 500px;"></div>
 			<div class="flex_gl">
 				<div class="iml"><img src="./images/spucme2.jpg" alt="spucme img"></div>
 				<h1>Spucme🌹 #vl</h1>
