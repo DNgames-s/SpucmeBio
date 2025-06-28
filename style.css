@@ -351,140 +351,261 @@ footer {
   color: white;
 }
 
+#status1 {
+  width: 55px;
+  height: 55px;
+  position: relative;
+  z-index: 100;
+  margin: auto;
+  transform: translate(70px, 160px);
+  filter: drop-shadow(0 0 15px #8e2de2);
+}
 
-	#status1 {
-    width: 55px; 
-    height: 55px;
-		position: relative;
-    z-index: 100;
-    margin: auto;
-    transform: translate(70px, 160px);
-    filter: drop-shadow(0 0 15px #8e2de2);
-	}
+#status2 {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  z-index: 100;
+  margin: auto;
+  
+  filter: drop-shadow(0 0 15px #8e2de2);
+}
 
-	.shop {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		margin: auto;
-		width: 80%;
-		height: auto;
-		gap: 20px;
-	}
+.shop {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  width: 80%;
+  height: auto;
+  gap: 20px;
+}
 
-	.shopdiv {
-		transform: translateY(120px);
-		width: 330px;
-		height: 300px;
-		display: block;
-		padding: 10px;
-		border-radius: 15px;
-		background-color: rgba(30, 32, 39, 0.363);
-		border: 1px solid #c2c2c2;
-		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-		text-align: center;
+.shopdiv {
+  transform: translateY(120px);
+  width: 330px;
+  height: 300px;
+  display: block;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: rgba(30, 32, 39, 0.363);
+  border: 1px solid #c2c2c2;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
 
-	}
+.shop img {
+  width: 330px;
+  height: 190px;
+  margin-top: 10px;
+  border-radius: 15px;
+}
 
-	.shop img {
-		width: 330px;
-		height: 190px;
-		margin-top: 10px;
-		border-radius: 15px;
-	}
+.shop h3 {
+  color: white;
+  position: relative;
+  top: -15px;
+}
 
-	.shop h3 {
-		color: white;
-		position: relative;
-		top: -15px;
-	}
+.nn a {
+  color: white;
+  background-color: #525151;
+  border-radius: 10px;
+  position: relative;
+  top: -20px;
+  margin: auto;
+  font-size: 17px;
+  transition: all 0.3s;
+  text-decoration: none;
+  width: 330px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-	.nn a {
-		color: white;
-		background-color: #525151;
-		border-radius: 10px;
-		position: relative;
-		top: -20px;
-		margin: auto;
-		font-size: 17px;
-		transition: all 0.3s;
-		text-decoration: none;
-		width: 330px;
-		height: 40px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
+.en a {
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  background: rgba(255, 255, 255, 0.13);
+  backdrop-filter: blur(10px);
+  position: relative;
+  top: -20px;
+  margin: auto;
+  font-size: 17px;
+  transition: all 0.3s;
+  text-decoration: none;
+  width: 330px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-	.en a {
-		border-radius: 10px;
-		border: 1px solid rgba(255, 255, 255, 0.2);
-		color: white;
-		background: rgba(255, 255, 255, 0.13);
-		backdrop-filter: blur(10px);
-		position: relative;
-		top: -20px;
-		margin: auto;
-		font-size: 17px;
-		transition: all 0.3s;
-		text-decoration: none;
-		width: 330px;
-		height: 40px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
+.en a:hover {
+  background-color: #944ab1a1;
+  scale: 1.01;
+  transform: translateY(-3px);
+}
 
-	.en a:hover {
-		background-color: #944ab1a1;
-		scale: 1.01;
-		transform: translateY(-3px);
-	}
+.btn {
+  padding: 10px 20px;
+  background-color: #6c5ce7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
 
-	@media (max-width: 800px) {
-		:root {
-			--gl-size: 330px;
-			--name-size: 330px;
-		}
+.btn:hover {
+  background-color: #5649c0;
+}
 
-		.namesost {
-			width: 330px;
-		}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: 1000;
+}
 
-		.knt_name {
-			width: 330px;
-		}
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
 
-		.shop_n {
-			width: 330px;
-		}
+.modal {
+  background-color: rgb(31, 28, 51);
+  border-radius: 10px;
+  width: 400px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transform: translateY(-20px);
+  transition: transform 0.3s;
+}
 
-		hr {
-			width: 70px;
-		}
+.modal-overlay.active .modal {
+  transform: translateY(0);
+}
 
-		.b1 {
-			width: 290px;
-		}
+.modal-header {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
 
-		.b2 {
-			width: 140px;
-		}
+.modal-subheader {
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
 
-		.buttons {
-			width: 330px;
-		}
+.modal-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
 
-		.knt {
-			width: 100%;
-			gap: 10px;
-		}
+.modal-table td {
+  padding: 8px 0;
+  border-bottom: 1px solid #777777;
+}
 
-		.knt div {
-			width: 160px;
-		}
+.modal-table td {
+  color: #ffffff;
+  width: 30%;
+}
 
-		.navbar a {
-			padding: 10px;
-		}
-	}
+.modal-footer {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hide-btn {
+  background: none;
+  border: none;
+  color: #6c5ce7;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.ok-btn {
+  padding: 12px 190px;
+  background-color: #ae00ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.ok-btn:hover {
+  background-color: #8300c0;
+}
+
+@media (max-width: 800px) {
+  :root {
+    --gl-size: 330px;
+    --name-size: 330px;
+  }
+
+  .namesost {
+    width: 330px;
+  }
+
+  .knt_name {
+    width: 330px;
+  }
+
+  .shop_n {
+    width: 330px;
+  }
+
+  hr {
+    width: 70px;
+  }
+
+  .b1 {
+    width: 290px;
+  }
+
+  .b2 {
+    width: 140px;
+  }
+
+  .buttons {
+    width: 330px;
+  }
+
+  .knt {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .knt div {
+    width: 160px;
+  }
+
+  .navbar a {
+    padding: 10px;
+  }
+}
