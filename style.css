@@ -488,7 +488,8 @@ footer {
 .modal {
   background-color: rgb(31, 28, 51);
   border-radius: 10px;
-  width: 400px;
+  width: 70%;
+  max-width: 400px;
   padding: 20px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   transform: translateY(-20px);
@@ -550,10 +551,12 @@ footer {
 
 .ok-btn {
   padding: 12px 190px;
+  width: 90%;
+  margin: auto;
   background-color: #ae00ff;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 7px;
   cursor: pointer;
   transition: all 0.3s;
 }
@@ -607,9 +610,5 @@ footer {
 
   .navbar a {
     padding: 10px;
-  }
-
-  .modal {
-    width: 300px;
   }
 }
