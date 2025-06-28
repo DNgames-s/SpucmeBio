@@ -608,4 +608,8 @@ footer {
   .navbar a {
     padding: 10px;
   }
+
+  .modal {
+    width: 300px;
+  }
 }
