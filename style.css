@@ -299,7 +299,6 @@ hr {
   padding: 10px;
   padding-left: 40px;
   padding-right: 40px;
-  border-radius: 10px;
   position: relative;
   top: -5px;
   font-size: 17px;
@@ -332,6 +331,7 @@ footer {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   overflow: hidden;
   padding-bottom: 10px;
   padding-top: 10px;
